@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/logo_header.svg" alt="header_logo">
+        </nav>
+    </header>
+    <div class="container">
+        <div class="inner-container">
+            <div class="border"></div>
+            <div class="content">
+            <div class="arrow">
+                <span class="back-arrow">
+                <a href="#">
+                    <img src="assets/back.svg" alt="back-arrow">
+                </a>
+                </span>
+                <span class="log-in">
+                Log in with Quantum
+                </span>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="school" id="district">
+                <label for="district">District</label>
+                <input type="radio" name="school" id="independent">
+                <label for="district">Independent school</label>
+            </div>
+            <div class="state">
+                <label for="state">
+                    <span class="state-label">
+                        State*
+                        <select name="state-name" id="state-name">
+                            <option value="none"></option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                        </select>
+                        <img src="assets/arrow-down.svg" alt="down-arrow">
+                    </span>
+                </label>
+            </div>
+            <div class="district">
+                <label for="district">
+                    <span class="district-label">
+                        District*
+                        <select name="district-name" id="district-name">
+                            <option value="none"></option>
+                            <option value="Alabama">Alabama School District</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                        <img src="assets/arrow-down.svg" alt="down-arrow">
+                    </span>
+                </label>
+            </div>
+            <div class="username">
+                <input type="text" name="username" id="username" placeholder="Username/Email ID*">
+                <p class="forgot-username">
+                    <a href="#">FORGOT USERNAME?</a>
+                </p>
+            </div>
+            <div class="password" id="pwd">
+                <input type="password" name="password" id="password" placeholder="Password*">
+                <img v-on:click="show()" src="assets/preview.svg" alt="preview">
+                <p class="forgot-password">
+                    <a href="#">FORGOT PASSWORD?</a>
+                </p>
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <div class="login" id="login">
+                <button v-on:click="login()" type="submit">LOG IN</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="nav">
+            <span class="about">
+                <a href="#">About</a>
+            </span>
+            <span class="contact">
+                <a href="#">Contact Us</a>
+            </span>
+        </div>
+        <div class="container-footer">
+            <img src="assets/logo_footer.svg" alt="footer_logo">
+            <span class="copyright">Copyright © 2020-2021</span>
+            <span class="zeus">Zeus Systems Pvt. Ltd.</span>
+            <span class="rights">All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

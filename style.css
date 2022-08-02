@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+}
+
+header {
+    background-color: #25313F;
+    background-image: transparent url('header_pattern_image.png') 0% 0% no-repeat padding-box;
+}
+
+header nav {
+    padding: 11px 24px;
+}
+
+header nav img {
+    height: 36px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+}
+
+.inner-container {
+    margin-top: 50px;
+    margin-bottom: 32px;
+    width: 488px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+}
+
+.border {
+    height: 4px;
+    background: #3AC7EC 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.content {
+    padding: 20px 32px;
+}
+
+.arrow {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow a img {
+    height: 26px;
+}
+
+.back-arrow {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10%;
+}
+
+.log-in {
+    flex-basis: 90%;
+    margin-left: 50px;
+}
+
+.radio-option {
+    margin-top: 34px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input {
+    height: 24px;
+    width: 20px;
+    margin-right: 8px;
+    accent-color: #1F7A54;
+}
+
+#independent {
+    margin-left: 32px
+}
+
+.state {
+    margin-top: 25px;
+    position: relative;
+}
+
+.district {
+    margin-top: 36px;
+    position: relative;
+}
+
+.state-label, .district-label {
+    display: block;
+    font-size: 12px;
+    color: #666666;
+}
+
+#state-name, #district-name {
+    border: none;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #dddada;
+    appearance: none;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.state-label img {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.district-label img {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.username {
+    margin-top: 56px;
+}
+
+.password {
+    position: relative;
+    margin-top: 33px;
+}
+
+#username, #password {
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid #dddada;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.forgot-username, .forgot-password {
+    text-align: right;
+    margin-block-start: 0%;
+}
+
+.forgot-username a, .forgot-password a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1F7A54;
+}
+
+.password img {
+    position: absolute;
+    top: -1.5px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.remember {
+    margin-top: 26px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#remember {
+    width: 18px;
+    height: 24px;
+    accent-color: #1F7A54;
+    margin-right: 5px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login button {
+    margin-top: 34px;
+    width: 216px;
+    height: 40px;
+    background-color: #3FD28B; 
+    border: none;
+    box-shadow: 0px 3px 5px #0000003D;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.nav {
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    height: 18px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.about {
+    border-right: 1px solid #0000001F;
+    padding-right: 8px;
+}
+
+.contact {
+    border-left: 1px solid #0000001F;
+    padding-left: 10px;
+}
+
+footer .nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1F7A54;
+}
+
+.container-footer {
+    background: #E0E1E1 0% 0% no-repeat padding-box;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #616161;
+}
+
+.container-footer img {
+    margin: 8px;
+    border-right: 0.125rem solid #0000001F;
+    padding-right: 0.5rem;
+}
+
+.copyright {
+    margin: 4px;
+}
+
+.zeus {
+    margin: 4px;
+}
+
+.rights {
+    margin: 4px;
+}
